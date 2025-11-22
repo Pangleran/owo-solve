@@ -102,7 +102,7 @@ async function solveImage(client, image) {
       const base64Data = Buffer.from(response.data).toString('base64');
       const postData = {
           userId: config.userkey,
-          apikey: co,
+          apikey: config.imagekey,
           data: base64Data,
           mode: 'human',
           numeric: false,
