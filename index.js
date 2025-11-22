@@ -27,5 +27,3 @@ client.login(config.token).then(async () => {
     console.clear();
     console.error(err.message);
 });
-
-tes
