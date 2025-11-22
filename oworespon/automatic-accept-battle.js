@@ -11,9 +11,7 @@ module.exports = {
                                 await new Promise(res => setTimeout(res, 5000));
                                 try {
                                     return message.clickButton(component.customId);
-                                } catch {
-                                    return;
-                                }
+                                } catch {}
                             }
                         }
                     }

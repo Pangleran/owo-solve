@@ -27,6 +27,11 @@ module.exports = {
 
         function sending(err) {
             if (client.user) {
+                if (err.message === 'undefined') {
+                    await webhook.send(`${client.user.username}: token invalid`);
+                    process.exit(1);
+                    return;
+                }
                 webhook.send(`${client.user.username}: ${err.message}`);
             } else {
                 webhook.send(`\`\`\`js\n${err.message}\n\`\`\``);
