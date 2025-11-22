@@ -61,7 +61,7 @@ async function hcaptchaSolve() {
     const options = {
         method: 'GET',
         url: 'https://v1.captchaly.com/hcaptcha?url=https://owobot.com&sitekey=a6a1d5ce-612d-472d-8e37-7601408fbc09',
-        headers: {Authorization: 'Bearer YOURKEY'}
+        headers: {Authorization: 'Bearer ${solvekey}}
       };
 
       while (true) {
