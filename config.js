@@ -1,7 +1,8 @@
 module.exports = {
     "token": "token",
     "owoId": "408785106942164992",
-    "solvekey"
+    "solvekey": "",
+    ""
     "channelId": null,
     "cmdRun": "wrun",
     "cmdStop": "ws",
